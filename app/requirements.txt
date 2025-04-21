@@ -1,0 +1,10 @@
+# NOTE: 
+# This is the requirements file for hugging face space build
+# [2025-04-12] Hugging Face Space build errors when trying to intall local package with `-e .`
+#   - Can't recognize `setup.py` file.
+
+# LLMs
+openai==1.75.0
+
+# Other
+gradio
