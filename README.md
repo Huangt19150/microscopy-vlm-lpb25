@@ -34,6 +34,7 @@ The current prompt was tested on a batch of **79** images (~20 each category), f
 - **Recall:** 75%
 - **F1-score:** 75%
 - **Classification Report:**
+
 | category | precision | recall | f1-score | sample size |
 |---|---|---|---|---|
 | clear | 0.79 | 0.95 | 0.86 | 20 |
