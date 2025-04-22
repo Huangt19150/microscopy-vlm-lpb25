@@ -149,6 +149,7 @@ with gr.Blocks() as demo:
         ## 📋 Quick Start Guide:
         1. Try one of the **Test Images** below to find the hidden crystals.
         2. (Optional) Classification result is cached to save cost on API request. Trust me 🤗 or click `🧹 Clear Cache` then observe the real latency of the prediction request (5-10s).
+        3. Toggle the lists below to find out more insights!
 
         ## 📖 Reference:
         1. Dataset & Background: [MARCO](https://marco.ccr.buffalo.edu/about).
@@ -197,7 +198,7 @@ with gr.Blocks() as demo:
             with gr.Column(scale=1):
                 gr.Markdown("""
                 ### Batch Accuracy
-                🔶 **Note that this is only a very priliminary proof of concept.** 🔶  
+                🔶 **Note that this is only a very preliminary proof of concept.** 🔶  
                 The current prompt was tested on a batch of **79** images (~20 each category), from a single source of image provider, with the following results:
                 - **Accuracy:** 75%
                 - **Precision:** 80%
@@ -231,7 +232,7 @@ with gr.Blocks() as demo:
                 ### Why vLLM Could Be Helpful  
                 From this mini proof of concept, we can already observe 2 potential benefits of using vLLM:
                 - **Small "Training" Set:** The current prompt design only uses 4 example images. More examples are going to be helpful, but the goal is to cover typical variations rather than providing huge learning bases.
-                - **Language & Reasoning:** Language and reasoning provides a powerful handle to capture knowlegde from domain experts using plain text and give examples in the prompt.
+                - **Language & Reasoning:** Language and reasoning provides a powerful handle to capture knowledge from domain experts using plain text and give examples in the prompt.
             """)
 
     # "What's Next?" Section
@@ -244,7 +245,7 @@ with gr.Blocks() as demo:
                 ### Large Scale Evaluation  
                 The total number of test images provided by MARCO is 47,029, with the following major variations:
                 - **Imaging System:** Images from different source organizations appears quite different in FOV size, droplet size, background color, etc.
-                - **Category Definition:** Categories like "other" and "precipitate" has large variations by itself.  
+                - **Category Definition:** The cateogry "other" has large variations by itself, and "crystals" also has different shapes, sometimes even indication of crystal growth.  
                 Therefore evaluation on the whole test set is important to understand the model's performance in real world.
             """)
 
